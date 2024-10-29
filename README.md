@@ -25,7 +25,7 @@
       - **`npm run cy:open:web`** OR `cypress open --env device=web` (change `web` to `mob` to run tests on mobile view)
     
     - cypress __headless mode__ (cypress run):  **[CURRENTLY BROKEN -- PLEASE DO NOT USE!!]**
-      - `~~npm run cy:run:web~~` OR `~~cypress run --env device=web~~`
+      - ~~`npm run cy:run:web`~~ OR ~~`cypress run --env device=web`~~
 
 - If you installed Cypress zip:
     - import **`hai-assessment`** folder and you are good to go
