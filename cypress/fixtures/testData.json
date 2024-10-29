@@ -1,0 +1,22 @@
+[
+   {
+      "name":"Deployment A",
+      "organization":"Org A",
+      "email":"invalidEmail",
+      "sensitiveData":"Yes",
+      "riskLevel":"High",
+      "securityMeasures":"Encryption and firewalls",
+      "encryption":"Yes",
+      "riskAssessment":"Yes",
+      "audit":"Yes"
+   },
+   {
+      "name":"Deployment B",
+      "organization":"Org B",
+      "email":"valid@domain.com",
+      "sensitiveData":"No",
+      "riskLevel":"Medium",
+      "riskAssessment":"No",
+      "audit":"Yes"
+   }
+]
