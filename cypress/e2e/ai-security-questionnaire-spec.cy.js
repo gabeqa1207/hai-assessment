@@ -1,4 +1,5 @@
-import home from '../selectors/questionnaire.css'
+import home from '../selectors/home.css'
+import questionnaireForm from '../selectors/questionnaire.css'
 
 describe('Conditional Navigation and Validation Test', () => { 
     beforeEach(() => { 
@@ -10,14 +11,14 @@ describe('Conditional Navigation and Validation Test', () => {
             cy.visit(home.appUrl); 
             
             // Fill in the General Information screen 
-            //cy.get('input[aria-label="AI Deployment Name"]').type(data.name); 
-            //cy.get('input[aria-label="Organization Name"]').type(data.organization); 
-            //cy.get('input[type="email"]').type(data.email); 
-            //cy.contains('Next').click(); 
+            cy.get(questionnaireForm.deployNameField).type(data.name); 
+            cy.get(questionnaireForm.orgNameField).type(data.organization); 
+            cy.get(questionnaireForm.emailField).type(data.email); 
+            cy.contains('Next').click(); 
 
             // Navigate based on Sensitive Data response 
-            //cy.contains('Does your AI system handle sensitive data?').click(); 
-            //cy.contains(data.sensitiveData).click(); 
+            cy.contains('Does your AI system handle sensitive data?').click(); 
+            cy.contains(data.sensitiveData).click(); 
             //cy.contains('Next').click(); 
 
             //if (data.sensitiveData === 'Yes') { 
