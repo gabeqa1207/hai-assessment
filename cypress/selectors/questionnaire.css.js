@@ -1,7 +1,6 @@
 module.exports = {
-    appUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSf9jveOjDzoGR99Zyp1H7rJM7Cb3mQhGFJvbuiH7cw8-bCwSQ/viewform',
-    deployNameField: 'input:first',
-    orgNameField: 'input:second',
-    emailField: 'input:third',
+    deployNameField: '.o3Dpx div:nth-child(1) div div .AgroKb div .aCsJod.oJeWuf div .Xb9hP input',
+    orgNameField: '.o3Dpx div:nth-child(2) div div .AgroKb div .aCsJod.oJeWuf div .Xb9hP input',
+    emailField: '.o3Dpx div:nth-child(3) div div .AgroKb div .aCsJod.oJeWuf div .Xb9hP input',
     nextButton: 'Next'
 }

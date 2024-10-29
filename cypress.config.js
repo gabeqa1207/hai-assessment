@@ -3,11 +3,17 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+   reporter: 'cypress-mochawesome-reporter',
+   reporterOptions: {
+      charts: true,
+      reportPageTitle: 'HAI Assessment Test Summary',
+      embeddedScreenshots: true,
+      inlineAssets: true,
+      saveAllAttempts: false,
+    },
     numTestsKeptInMemory: 10,
     defaultCommandTimeout: 15000,
     env: {
-        apiUrl: 'https://psat198366.xxxboeing.com/api',
-        oldApiUrl: 'https://psat081671.xxxboeing.com/api',
         device: 'desktop',
         email: 'test@test.com',
         password: '********'
@@ -21,11 +27,11 @@ module.exports = defineConfig({
     viewportHeight: 768,
     viewportWidth: 1266,
     e2e: {
-    // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
+        // We've imported your old cypress plugins here.
+        // You may want to clean this up later by importing these.
         setupNodeEvents: function (on, config) {
+            require('cypress-mochawesome-reporter/plugin')(on);
             return require('./cypress/plugins/index.js')(on, config)
-        },
-        baseUrl: 'https://psat198366.xxxboeing.com/#'
+        }
     }
 })

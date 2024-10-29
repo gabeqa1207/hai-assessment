@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './questionnaire.cmd'
+import 'cypress-mochawesome-reporter/register';
 
 // ignore all console errors in app
 // eslint-disable-next-line no-unused-vars
