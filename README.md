@@ -23,8 +23,11 @@
 - If you installed Cypress via npm: 
     - cypress test runner (cypress __open__):
       - **`npm run cy:open:web`** OR `cypress open --env device=web` (change `web` to `mob` to run tests on mobile view)
-    
-    - cypress __headless mode__ (cypress run):  <span style="color: red;">**[CURRENTLY BROKEN -- PLEASE DO NOT USE!!]**</span>
+      
+<span style="color:red;">
+  <b>[CURRENTLY BROKEN -- PLEASE DO NOT USE!!]</b>
+</span>
+    - cypress __headless mode__ (cypress run):
       - ~~`npm run cy:run:web`~~ OR ~~`cypress run --env device=web`~~
 
 - If you installed Cypress zip:
